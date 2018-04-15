@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_function"
+            android:icon="@drawable/ic_assignment_returned_white_24dp"
+            android:title="@string/function" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_question_answer_white_48dp"
+            android:title="@string/report" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings_white_48dp"
+            android:title="@string/setting" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_clear_white_48dp"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

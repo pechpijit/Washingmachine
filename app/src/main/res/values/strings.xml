@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Washing machine</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="function">Function</string>
+    <string name="report">Report</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
+    <string name="button_start_machine">Start</string>
+    <string name="button_pause">Pause</string>
+    <string name="button_stop">Stop</string>
+
+    <string name="status_run">Status Run</string>
+    <string name="status_stop">Status Stop</string>
+    <string name="status_pause">Status Pause</string>
+
+
+    <string name="button_login">Log in</string>
+    <string name="button_send_report">Send</string>
+
+    <string name="input_mode">Mode :</string>
+    <string name="input_function">Function :</string>
+    <string name="input_time">Time :</string>
+
+    <string name="hint_input_topic">Please enter topic</string>
+    <string name="hint_input_detail">Please enter detail</string>
+    <string name="title_activity_setting_language">Language</string>
+    <string name="title_activity_setting_machine">Machine Volume</string>
+    <string name="title_activity_setting_notification">Notification</string>
+
+</resources>

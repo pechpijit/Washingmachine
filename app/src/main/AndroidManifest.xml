@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.khiancode.wm.washingmachine">
+
+    <application
+        android:name=".helper.SetFonts"
+        android:allowBackup="true"
+        android:icon="@drawable/clean2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/clean2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".helper.TimeReceiver" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StatusActivity"
+            android:label="Status Machine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Status2Activity"
+            android:label="Status Machine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/function"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SettingLanguageActivity"
+            android:label="@string/title_activity_setting_language"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SettingMachineActivity"
+            android:label="@string/title_activity_setting_machine"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SettingNotificationActivity"
+            android:label="@string/title_activity_setting_notification"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>
