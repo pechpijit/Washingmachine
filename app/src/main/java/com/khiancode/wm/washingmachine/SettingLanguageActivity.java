@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.khiancode.wm.washingmachine.adapter.AdapterSettingLanguage;
+import com.khiancode.wm.washingmachine.helper.PrefUtils;
 
 import java.util.ArrayList;
 
@@ -46,6 +47,8 @@ public class SettingLanguageActivity extends AppCompatActivity {
         adapter.SetOnItemClickListener(new AdapterSettingLanguage.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
+                PrefUtils prefUtils = new PrefUtils(getApplicationContext());
+                prefUtils.setLanguage(position);
                 finish();
                 overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_right);
             }

@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.khiancode.wm.washingmachine.adapter.AdapterSettingLanguage;
 import com.khiancode.wm.washingmachine.adapter.AdapterSettingMachine;
+import com.khiancode.wm.washingmachine.helper.PrefUtils;
 
 import java.util.ArrayList;
 
@@ -48,6 +49,8 @@ public class SettingMachineActivity extends AppCompatActivity {
         adapter.SetOnItemClickListener(new AdapterSettingMachine.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
+                PrefUtils prefUtils = new PrefUtils(getApplicationContext());
+                prefUtils.setMachine(position);
                 finish();
                 overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_right);
             }

@@ -71,7 +71,7 @@ public class BaseActivity extends AppCompatActivity {
         new AlertDialog.Builder(this, R.style.AppTheme_Dark_Dialog)
                 .setTitle(title)
                 .setMessage(message)
-                .setPositiveButton("ตกลง", null)
+                .setPositiveButton("OK", null)
                 .setCancelable(false)
                 .show();
     }

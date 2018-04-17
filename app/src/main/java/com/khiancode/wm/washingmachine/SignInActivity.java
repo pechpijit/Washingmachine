@@ -68,11 +68,14 @@ public class SignInActivity extends BaseActivity {
 
         String email = inputEmail.getText().toString().trim();
 
-        if (email.isEmpty() || email.length() < 6) {
-            inputEmail.setError("Please enter your machine id.");
+        if (email.isEmpty()) {
+            dialogTM("Error","Please enter your machine id.");
             valid = false;
         } else {
-            inputEmail.setError(null);
+            if (email.length() < 6 || email.length() > 10) {
+                dialogTM("Error","ID between 6 and 10");
+                valid = false;
+            }
         }
 
         Log.d(TAG, "validate:"+valid);

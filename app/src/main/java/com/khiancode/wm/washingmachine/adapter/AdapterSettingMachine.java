@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.khiancode.wm.washingmachine.R;
+import com.khiancode.wm.washingmachine.helper.PrefUtils;
 
 import java.util.ArrayList;
 
@@ -17,6 +18,7 @@ public class AdapterSettingMachine extends RecyclerView.Adapter<AdapterSettingMa
     ArrayList<String> model;
     Context context;
     OnItemClickListener clickListener;
+    PrefUtils prefUtils;
 
     public AdapterSettingMachine(Context applicationContext, ArrayList<String> model) {
         this.context = applicationContext;
@@ -32,7 +34,8 @@ public class AdapterSettingMachine extends RecyclerView.Adapter<AdapterSettingMa
     @Override
     public void onBindViewHolder(final VersionViewHolder versionViewHolder, final int i) {
         versionViewHolder.title.setText(model.get(i));
-        if (i == 0) {
+        prefUtils = new PrefUtils(context);
+        if (prefUtils.getMachine() == i) {
             versionViewHolder.check.setImageResource(R.drawable.ic_check_black_48dp);
         }
 

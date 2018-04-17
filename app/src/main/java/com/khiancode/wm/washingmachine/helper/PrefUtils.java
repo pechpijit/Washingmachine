@@ -14,6 +14,9 @@ public class PrefUtils {
     private static final String TIME = "time";
     private static final String MAXTIME = "maxtime";
     private static final String LOGIN = "login";
+    private static final String LANGUAGE = "language";
+    private static final String MACHINE = "machine";
+    private static final String NOTIFICATION = "notification";
     private SharedPreferences mPreferences;
 
     public PrefUtils(Context context) {
@@ -87,6 +90,36 @@ public class PrefUtils {
     public void setMaxTime(int maxTime) {
         SharedPreferences.Editor editor = mPreferences.edit();
         editor.putInt(MAXTIME, maxTime);
+        editor.apply();
+    }
+
+    public int getLanguage() {
+        return mPreferences.getInt(LANGUAGE,0);
+    }
+
+    public void setLanguage(int language) {
+        SharedPreferences.Editor editor = mPreferences.edit();
+        editor.putInt(LANGUAGE, language);
+        editor.apply();
+    }
+
+    public int getMachine() {
+        return mPreferences.getInt(MACHINE,0);
+    }
+
+    public void setMachine(int machine) {
+        SharedPreferences.Editor editor = mPreferences.edit();
+        editor.putInt(MACHINE, machine);
+        editor.apply();
+    }
+
+    public int getNotification(int id) {
+        return mPreferences.getInt(NOTIFICATION+id,0);
+    }
+
+    public void setNotification(int id,int value) {
+        SharedPreferences.Editor editor = mPreferences.edit();
+        editor.putInt(NOTIFICATION+id, value);
         editor.apply();
     }
 }
